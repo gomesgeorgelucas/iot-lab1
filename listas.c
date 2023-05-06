@@ -131,4 +131,6 @@ int main(void)
 
     libera(L1);
     libera(L2);
+
+    return 0;
 }

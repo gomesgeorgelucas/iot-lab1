@@ -89,7 +89,9 @@ int main()
 
     printf("Realiza Enxerto\n");
 
-    exemplo2->dir->esq = cria(3, cria(66, inicializa(), inicializa()), cria(31, inicializa(), inicializa()));
+    exemplo2->dir->esq = cria(3,
+                             cria(66, inicializa(), inicializa()),
+                             cria(31, inicializa(), inicializa()));
 
     printf("Pre-Fixado: ");
     imprime_pre(exemplo2);
@@ -98,6 +100,8 @@ int main()
     printf("\nPos-Fixado: ");
     imprime_pos(exemplo2);
     printf("\n");
+
+    libera(exemplo2);
 
     return 0;
 }
