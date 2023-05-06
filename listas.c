@@ -129,11 +129,6 @@ int main(void)
     else
         printf("L1 e L2 sao diferentes\n");
 
-    if (igual(L1, NULL))
-        printf("L1 e L2 sao iguais\n");
-    else
-        printf("L1 e L2 sao diferentes\n");
-
     libera(L1);
     libera(L2);
 }
