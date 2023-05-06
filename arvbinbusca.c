@@ -94,5 +94,5 @@ void main(void)
     if (busca(raiz, 8) != NULL)
         printf("O valor 8 foi encontrado.\n");
     else
-        printf("O valor 8 nao foi encontrado.");
+        printf("O valor 8 nao foi encontrado.\n");
 }
