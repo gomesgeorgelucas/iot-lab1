@@ -75,19 +75,19 @@ int main()
     ArvGen *neto33 = cria(12);
     ArvGen *neto41 = cria(35);
 
-    insere(raiz, filho1);
-    insere(raiz, filho2);
-    insere(raiz, filho3);
-    insere(raiz, filho4);
-
-    insere(filho1, neto11);
     insere(filho1, neto12);
+    insere(filho1, neto11);
 
-    insere(filho3, neto31);
-    insere(filho3, neto32);
     insere(filho3, neto33);
+    insere(filho3, neto32);
+    insere(filho3, neto31);
 
     insere(filho4, neto41);
+
+    insere(raiz, filho4);
+    insere(raiz, filho3);
+    insere(raiz, filho2);
+    insere(raiz, filho1);
 
     imprime(raiz);
 
@@ -100,4 +100,6 @@ int main()
         printf("Encontrou 88\n");
     else
         printf("Nao encontrou 88\n");
+
+    libera(raiz);
 }

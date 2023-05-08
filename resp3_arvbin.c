@@ -72,7 +72,7 @@ void imprime_pos(Arv *a)
 
 int main()
 {
-    Arv *exemplo2 = cria(45,
+    Arv *exemplo3 = cria(45,
                          cria(5,
                               cria(12, inicializa(), inicializa()),
                               cria(34, inicializa(),
@@ -80,14 +80,28 @@ int main()
                          cria(80, inicializa(),
                               cria(40, inicializa(), inicializa())));
     printf("Pre-Fixado: ");
-    imprime_pre(exemplo2);
+    imprime_pre(exemplo3);
     printf("\nIn-Fixado: ");
-    imprime_in(exemplo2);
+    imprime_in(exemplo3);
     printf("\nPos-Fixado: ");
-    imprime_pos(exemplo2);
+    imprime_pos(exemplo3);
     printf("\n");
 
-    libera(exemplo2);
+    printf("Realiza Enxerto\n");
+
+    exemplo3->dir->esq = cria(3,
+                              cria(66, inicializa(), inicializa()),
+                              cria(31, inicializa(), inicializa()));
+
+    printf("Pre-Fixado: ");
+    imprime_pre(exemplo3);
+    printf("\nIn-Fixado: ");
+    imprime_in(exemplo3);
+    printf("\nPos-Fixado: ");
+    imprime_pos(exemplo3);
+    printf("\n");
+
+    exemplo3 = libera(exemplo3);
 
     return 0;
 }

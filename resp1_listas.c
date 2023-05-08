@@ -41,7 +41,7 @@ Lista *busca(Lista *l, int v)
     for (p = l; p != NULL; p = p->prox)
         if (p->info == v)
             return p;
-    return NULL; /* n�o achou o elemento */
+    return NULL; /* não achou o elemento */
 }
 
 Lista *retira(Lista *l, int v)
@@ -131,6 +131,9 @@ int main(void)
 
     libera(L1);
     libera(L2);
+
+    L1 = NULL;
+    L2 = NULL;
 
     return 0;
 }

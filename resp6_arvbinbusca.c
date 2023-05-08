@@ -96,5 +96,5 @@ void main(void)
     else
         printf("O valor 8 nao foi encontrado.\n");
 
-    libera(raiz);
+    raiz = libera(raiz);
 }

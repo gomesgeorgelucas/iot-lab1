@@ -113,7 +113,7 @@ int main()
     imprime_pos(exemplo2);
     printf("\n");
 
-    libera(exemplo2);
+    exemplo2 = libera(exemplo2);
 
     return 0;
 }
