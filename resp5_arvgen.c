@@ -102,4 +102,6 @@ int main()
         printf("Nao encontrou 88\n");
 
     libera(raiz);
+
+    return 0;
 }
